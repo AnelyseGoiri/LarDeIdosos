@@ -40,27 +40,12 @@
         textarea {
             resize: vertical;
         }
-        button {
-            margin-top: 25px;
-            width: 100%;
-            background-color: #0e4625;
-            color: white;
-            border: none;
-            padding: 15px;
-            font-size: 16px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        button:hover {
-            background-color: #0e4625;
-        }
-         .buttonn {
+        .buttonn {
             display: inline-block;
             background-color: #0e4625;
             color: white;
             padding: 15px 30px;
-            margin-top: 20px;
+            margin: 10px;
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
@@ -69,8 +54,13 @@
             text-align: center;
         }
         .buttonn:hover {
-            background-color: #0e4625;
+            background-color: #145b34;
         }
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -103,13 +93,12 @@
         <label for="mensagem">Mensagem (opcional):</label>
         <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva algo se desejar..."></textarea>
 
-        <!-- Botão solicitação enviada! -->
-        <a href="Solicitacao-enviada.html" class="buttonn">Enviar Solicitação</a>
-    </div>
+        <!-- Botões centralizados -->
+        <div class="buttons-container">
+            <a href="Solicitacao-enviada.html" class="buttonn">Enviar Solicitação</a>
+            <a href="Página-inicial.html" class="buttonn">Voltar para a Página Inicial</a>
+        </div>
     </form>
-
-     <!-- Botão de voltar -->
-    <a href="Página-inicial.html" class="buttonn">Voltar para a Página Inicial</a>
 </div>
 
 </body>
